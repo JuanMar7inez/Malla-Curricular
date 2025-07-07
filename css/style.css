@@ -1,0 +1,295 @@
+:root {
+  --fondo: #ffffff;
+  --texto: #000000;
+  --fondo-titulo: #FEDA3F;
+  --ramo-base: #f2f2f2;
+  --hover-color: #e0f7fa;
+  --leyenda-texto: #333;
+  --tachado-bg: #12646b6c;
+  --tachado-texto: #3C3C3B;
+  --tachado-linea: #A4222B;
+}
+
+body {
+  background-color: var(--fondo);
+  color: var(--texto);
+}
+
+/* Título (fondo y color no cambian en modo noche) */
+#titulo-container {
+  background-color: var(--fondo-titulo);
+}
+#titulo-principal {
+  font-family: 'Myriad Pro','Myriad Pro Bold';
+  color: black;
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-align: left;
+  margin: 0px 10px;
+  text-transform: uppercase;
+}
+
+/* Cuadro de ramo */
+.ramo {
+  width: 85px;
+  height: 50px;
+  border: 2px solid #ccc;
+  background: var(--ramo-base);
+  margin: 4px 0;
+  padding: 6px;
+  text-align: center;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  word-break: break-word;
+  color: var(--texto);
+}
+
+/* Hover */
+.ramo:hover {
+  background-color: var(--hover-color);
+}
+
+/* Ramo tachado */
+.ramo.tachado {
+  font-weight: 300;
+  position: relative;
+  color: var(--tachado-texto);
+  background-color: var(--tachado-bg);
+}
+.ramo.tachado::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 115px;
+  height: 2px;
+  background-color: var(--tachado-linea);
+  transform: rotate(32deg);
+  transform-origin: top left;
+  pointer-events: none;
+}
+
+/* Ramo bloqueado */
+.bloqueado {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Tipos de formación */
+.ramo.formacion-especifica { border-color: #e53935; }
+.ramo.formacion-basica { border-color: #1e88e5; }
+.ramo.formacion-en-gestion { border-color: #43a047; }
+.ramo.formacion-general { border-color: #fdd835; }
+
+/* Columnas por semestre */
+.semestre {
+  font-family: 'Myriad Pro';
+  padding: 8px 0;
+  background: transparent;
+  border: none;
+}
+.semestre h2 {
+  color: var(--texto);
+  text-align: left;
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.1;
+}
+.semestre h2::after {
+  content: "Semestre";
+  font-size: 0.7rem;
+  color: var(--texto);
+  font-weight: 400;
+  margin-top: 2px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  width: 100%;
+}
+
+/* Modo noche */
+body.modo-noche {
+  --fondo: #121212;
+  --texto: #f0f0f0;
+  --ramo-base: #1e1e1e;
+  --hover-color: #333;
+  --leyenda-texto: #f0f0f0;
+  --tachado-bg: #333;
+  --tachado-texto: #aaaaaa;
+  --tachado-linea: #ef5350;
+}
+
+/* Botón toggle */
+#toggle-tema {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background-color: #feda3f;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-family: 'Myriad Pro', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+body.modo-noche #toggle-tema {
+  background-color: #333;
+  color: #feda3f;
+}
+
+/* Contenedor de malla */
+#malla {
+  font-family: 'Myriad Pro';
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+#pagina {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Leyenda */
+#leyenda-container {
+  max-width: 1200px;
+  margin: 20px auto 40px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+  color: var(--leyenda-texto);
+}
+#leyenda-container hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-bottom: 12px;
+}
+#leyenda {
+  font-family: 'Myriad Pro';
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.leyenda-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: default;
+  color: var(--leyenda-texto);
+}
+.leyenda-item::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.leyenda-item.formacion-especifica::before {
+  background-color: #e53935;
+  border-color: #e53935;
+}
+.leyenda-item.formacion-basica::before {
+  background-color: #1e88e5;
+  border-color: #1e88e5;
+}
+.leyenda-item.formacion-en-gestion::before {
+  background-color: #43a047;
+  border-color: #43a047;
+}
+.leyenda-item.formacion-general::before {
+  background-color: #fdd835;
+  border-color: #fdd835;
+}
+
+/* Fuentes */
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('/fonts/MyriadPro-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('/fonts/MyriadPro-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('/fonts/MyriadPro-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('/fonts/MyriadPro-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Myriad Pro Condensed';
+  src: url('/fonts/MyriadPro-Cond.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Myriad Pro Condensed';
+  src: url('/fonts/MyriadPro-BoldCond.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+#enlace-externo {
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  background-color: #feda3f;
+  color: #000;
+  text-decoration: none;
+  font-family: 'Myriad Pro', sans-serif;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+#enlace-externo:hover {
+  background-color: #ffe970;
+}
+
+body.modo-noche #enlace-externo {
+  background-color: #333;
+  color: #feda3f;
+}
+
+body.modo-noche #enlace-externo:hover {
+  background-color: #444;
+}

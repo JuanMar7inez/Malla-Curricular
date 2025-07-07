@@ -1,0 +1,607 @@
+[
+  {
+    "id": "01",
+    "nombre": "Computación para Ingeniería",
+    "prereqs": [],
+    "semestre": 1,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "02",
+    "nombre": "Química aplicada a la Ingeniería",
+    "prereqs": [],
+    "semestre": 1,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "03",
+    "nombre": "Administración Moderna",
+    "prereqs": [],
+    "semestre": 1,
+    "area": "Formación en Gestión"
+  },
+  {
+    "id": "04",
+    "nombre": "Competencias Académicas Universitarias",
+    "prereqs": [],
+    "semestre": 1,
+    "area": "Formación General"
+  },
+  {
+    "id": "05",
+    "nombre": "Álgebra y Geometría Analítica",
+    "prereqs": [],
+    "semestre": 1,
+    "area": "Formación Básica"
+  },
+  {
+    "id": "06",
+    "nombre": "Cálculo Diferencial",
+    "prereqs": [],
+    "semestre": 1,
+    "area": "Formación Básica"
+  },
+  {
+    "id": "07",
+    "nombre": "Base de Datos",
+    "prereqs": [],
+    "semestre": 2,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "08",
+    "nombre": "Programación I",
+    "prereqs": [
+      "01"
+    ],
+    "semestre": 2,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "09",
+    "nombre": "Cálculo Integral",
+    "prereqs": [
+      "06"
+    ],
+    "semestre": 2,
+    "area": "Formación Básica"
+  },
+  {
+    "id": "10",
+    "nombre": "Álgebra Lineal",
+    "prereqs": [
+      "05"
+    ],
+    "semestre": 2,
+    "area": "Formación Básica"
+  },
+  {
+    "id": "11",
+    "nombre": "Escritura y Lectura Académica",
+    "prereqs": [
+      "05"
+    ],
+    "semestre": 2,
+    "area": "Formación General"
+  },
+  {
+    "id": "12",
+    "nombre": "Física",
+    "prereqs": [
+      "06"
+    ],
+    "semestre": 2,
+    "area": "Formación Básica"
+  },
+  {
+    "id": "13",
+    "nombre": "Programación II",
+    "prereqs": [
+      "08"
+    ],
+    "semestre": 3,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "14",
+    "nombre": "Taller de Base de Datos",
+    "prereqs": [
+      "07"
+    ],
+    "semestre": 3,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "15",
+    "nombre": "Cálculo Multivariable",
+    "prereqs": [
+      "09",
+      "10"
+    ],
+    "semestre": 3,
+    "area": "Formación Básica"
+  },
+  {
+    "id": "16",
+    "nombre": "Ecuaciones Diferenciales y Análisis Numérico",
+    "prereqs": [
+      "09",
+      "10"
+    ],
+    "semestre": 3,
+    "area": "Formación Básica"
+  },
+  {
+    "id": "17",
+    "nombre": "Comunicación Eficaz",
+    "prereqs": [
+      "09",
+      "10"
+    ],
+    "semestre": 3,
+    "area": "Formación General"
+  },
+  {
+    "id": "18",
+    "nombre": "Mecánica Clásica",
+    "prereqs": [
+      "12"
+    ],
+    "semestre": 3,
+    "area": "Formación Básica"
+  },
+  {
+    "id": "19",
+    "nombre": "Microeconomía",
+    "prereqs": [
+      "03",
+      "09"
+    ],
+    "semestre": 3,
+    "area": "Formación en Gestión"
+  },
+  {
+    "id": "20",
+    "nombre": "Taller de Investigación para la Ingeniería",
+    "prereqs": [],
+    "semestre": 4,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "21",
+    "nombre": "Estructura de Datos",
+    "prereqs": [
+      "13"
+    ],
+    "semestre": 4,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "22",
+    "nombre": "Probabilidades y Estadística",
+    "prereqs": [
+      "10"
+    ],
+    "semestre": 4,
+    "area": "Formación Básica"
+  },
+  {
+    "id": "23",
+    "nombre": "Electricidad y Magnetismo",
+    "prereqs": [
+      "16",
+      "18"
+    ],
+    "semestre": 4,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "24",
+    "nombre": "Ética y Responsabilidad Social",
+    "prereqs": [
+      "16",
+      "18"
+    ],
+    "semestre": 4,
+    "area": "Formación General"
+  },
+  {
+    "id": "25",
+    "nombre": "Termodinámica Aplicada",
+    "prereqs": [
+      "02",
+      "09",
+      "18"
+    ],
+    "semestre": 4,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "26",
+    "nombre": "Arquitectura de Computadoras",
+    "prereqs": [],
+    "semestre": 5,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "27",
+    "nombre": "Inglés I",
+    "prereqs": [],
+    "semestre": 5,
+    "area": "Formación General"
+  },
+  {
+    "id": "28",
+    "nombre": "Lenguajes de Programación",
+    "prereqs": [
+      "21"
+    ],
+    "semestre": 5,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "29",
+    "nombre": "Inferencia Estadística",
+    "prereqs": [
+      "22"
+    ],
+    "semestre": 5,
+    "area": "Formación Básica"
+  },
+  {
+    "id": "30",
+    "nombre": "Ingeniería Económica",
+    "prereqs": [
+      "19"
+    ],
+    "semestre": 5,
+    "area": "Formación en Gestión"
+  },
+  {
+    "id": "31",
+    "nombre": "Investigación de Operaciones",
+    "prereqs": [
+      "16"
+    ],
+    "semestre": 5,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "32",
+    "nombre": "Taller de Programación",
+    "prereqs": [
+      "21"
+    ],
+    "semestre": 5,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "33",
+    "nombre": "Ingeniería de Software",
+    "prereqs": [],
+    "semestre": 6,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "34",
+    "nombre": "Inglés II",
+    "prereqs": [
+      "27"
+    ],
+    "semestre": 6,
+    "area": "Formación General"
+  },
+  {
+    "id": "35",
+    "nombre": "Diseño de Interfaces Usuarias",
+    "prereqs": [
+      "28"
+    ],
+    "semestre": 6,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "36",
+    "nombre": "Matemáticas Discretas",
+    "prereqs": [
+      "21"
+    ],
+    "semestre": 6,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "37",
+    "nombre": "Métodos de Optimización",
+    "prereqs": [
+      "21"
+    ],
+    "semestre": 6,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "38",
+    "nombre": "Sistemas Operativos",
+    "prereqs": [
+      "26"
+    ],
+    "semestre": 6,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "39",
+    "nombre": "Contabilidad de Costos",
+    "prereqs": [
+      "30"
+    ],
+    "semestre": 6,
+    "area": "Formación en Gestión"
+  },
+  {
+    "id": "40",
+    "nombre": "Control Automático",
+    "prereqs": [
+      "26"
+    ],
+    "semestre": 7,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "41",
+    "nombre": "Inglés III",
+    "prereqs": [
+      "34"
+    ],
+    "semestre": 7,
+    "area": "Formación General"
+  },
+  {
+    "id": "42",
+    "nombre": "Arquitectura de Desarrollo Web",
+    "prereqs": [
+      "28"
+    ],
+    "semestre": 7,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "43",
+    "nombre": "Ingeniería de Requerimientos",
+    "prereqs": [
+      "33"
+    ],
+    "semestre": 7,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "44",
+    "nombre": "Inteligencia Artificial",
+    "prereqs": [
+      "36"
+    ],
+    "semestre": 7,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "45",
+    "nombre": "Marketing Industrial",
+    "prereqs": [
+      "36"
+    ],
+    "semestre": 7,
+    "area": "Formación en Gestión"
+  },
+  {
+    "id": "46",
+    "nombre": "Redes de Computadores",
+    "prereqs": [
+      "38"
+    ],
+    "semestre": 7,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "47",
+    "nombre": "Práctica Profesional I",
+    "prereqs": [
+      "33",
+      "38"
+    ],
+    "semestre": 7,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "48",
+    "nombre": "Inglés IV",
+    "prereqs": [
+      "41"
+    ],
+    "semestre": 8,
+    "area": "Formación General"
+  },
+  {
+    "id": "49",
+    "nombre": "Evaluación Económica de Proyectos",
+    "prereqs": [
+      "45"
+    ],
+    "semestre": 8,
+    "area": "Formación en Gestión"
+  },
+  {
+    "id": "50",
+    "nombre": "Ingeniería de Diseño",
+    "prereqs": [
+      "43"
+    ],
+    "semestre": 8,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "51",
+    "nombre": "Inteligencia de Negocios",
+    "prereqs": [
+      "43"
+    ],
+    "semestre": 8,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "52",
+    "nombre": "Modelamiento y Simulación",
+    "prereqs": [
+      "37"
+    ],
+    "semestre": 8,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "53",
+    "nombre": "Seguridad de la Información",
+    "prereqs": [
+      "46"
+    ],
+    "semestre": 8,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "54",
+    "nombre": "Taller de Redes",
+    "prereqs": [
+      "46"
+    ],
+    "semestre": 8,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "55",
+    "nombre": "Gestión de Proyectos",
+    "prereqs": [],
+    "semestre": 9,
+    "area": "Formación en Gestión"
+  },
+  {
+    "id": "56",
+    "nombre": "Administración Estratégica",
+    "prereqs": [
+      "49"
+    ],
+    "semestre": 9,
+    "area": "Formación en Gestión"
+  },
+  {
+    "id": "57",
+    "nombre": "Computación Distribuida",
+    "prereqs": [
+      "28",
+      "46"
+    ],
+    "semestre": 9,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "58",
+    "nombre": "Proyecto de Ingeniería I",
+    "prereqs": [
+      "49",
+      "50"
+    ],
+    "semestre": 9,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "59",
+    "nombre": "Sustentabilidad y Medioambiente",
+    "prereqs": [
+      "49",
+      "50"
+    ],
+    "semestre": 9,
+    "area": "Formación General"
+  },
+  {
+    "id": "60",
+    "nombre": "Ingeniería QA",
+    "prereqs": [
+      "50"
+    ],
+    "semestre": 9,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "61",
+    "nombre": "Normas de Seguridad",
+    "prereqs": [
+      "53"
+    ],
+    "semestre": 9,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "62",
+    "nombre": "Práctica Profesional II",
+    "prereqs": [
+      "47"
+    ],
+    "semestre": 9,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "63",
+    "nombre": "Innovación y Emprendimiento",
+    "prereqs": [],
+    "semestre": 10,
+    "area": "Formación en Gestión"
+  },
+  {
+    "id": "64",
+    "nombre": "Proyecto de Ingeniería II",
+    "prereqs": [
+      "58"
+    ],
+    "semestre": 10,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "65",
+    "nombre": "Gestión TI",
+    "prereqs": [
+      "61"
+    ],
+    "semestre": 10,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "66",
+    "nombre": "Legislación Informática",
+    "prereqs": [
+      "61"
+    ],
+    "semestre": 10,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "67",
+    "nombre": "Innovación Tecnológica",
+    "prereqs": [
+      "61"
+    ],
+    "semestre": 10,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "68",
+    "nombre": "Examen de Título",
+    "prereqs": [],
+    "semestre": 11,
+    "area": "Formación Específica"
+  },
+  {
+    "id": "69",
+    "nombre": "Proyecto Aplicado de Titulación",
+    "prereqs": [
+      "64"
+    ],
+    "semestre": 11,
+    "area": "Formación Específica"
+  }
+]

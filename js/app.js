@@ -54,11 +54,12 @@ function renderMalla() {
       div.id = ramo.id;
 
       const prereqsListos = ramo.prereqs.every((id) => estado[id]);
-
-      if (estado[ramo.id]) {
-        div.classList.add('tachado');
-      } else if (!prereqsListos) {
+      // FIX: Si no cumple el prerequisito, se bloquea y limpiamos estado
+      if(!prereqsListos){
         div.classList.add('bloqueado');
+        estado[ramo.id] = false; // Fuerza que no esté aprobado
+      } else if (estado[ramo.id]) {
+        div.classList.add('tachado');
       }
 
       div.addEventListener('click', () => {
@@ -74,9 +75,9 @@ function renderMalla() {
 
       columna.appendChild(div);
     });
-
     container.appendChild(columna);
   }
+  localStorage.setItem('estadoRamos', JSON.stringify(estado)); // Se guarda el estado corregido (FIX)
 }
 
 function eliminarTildes(texto){
